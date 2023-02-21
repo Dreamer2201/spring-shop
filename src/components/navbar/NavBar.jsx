@@ -8,6 +8,8 @@ export default function NavBar() {
             <StyledNavLink to="/"> Home </StyledNavLink>
             <StyledNavLink to="/women"> Woman </StyledNavLink>
             <StyledNavLink to="/child"> Child </StyledNavLink>
+            <StyledNavLink to="/register"> Sign up </StyledNavLink>
+            <StyledNavLink to="/login"> Sign in </StyledNavLink>
         </StyledNavList>
   )
 }
