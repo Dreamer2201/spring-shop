@@ -1,12 +1,26 @@
 import React from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {StyledTitle} from './StyledWomenPage';
+import ModalItem from '../../components/Modal/ModalSign';
 
 export default function WomenPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
+
   return (
     <div>
         <StyledTitle>Women catalog</StyledTitle>
         <ul>
-        <li>Item 1</li>
+          <li>
+            <Link>
+              <h3>Item 1</h3>
+              <button onClick={toggleModal} type='button'>open</button>
+            </Link>
+          </li>
             <li>Item 2</li>
             <li>Item 3</li>
             <li>Item 4</li>
@@ -17,6 +31,7 @@ export default function WomenPage() {
             <li>Item 9</li>
             <li>Item 10</li>
         </ul>
+        {isModalOpen ? <ModalItem onClose={toggleModal} /> : null}
     </div>
   )
 }
