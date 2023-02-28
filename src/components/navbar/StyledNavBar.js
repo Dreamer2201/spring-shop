@@ -36,6 +36,8 @@ const StyledNavLinkLog = styled(NavLink)`
 const BtnBurgerMenu = styled.button`
 @media (max-width: 767px) {
     display: block;
+    width: 50px;
+    height: 50px;
 }
 @media (min-width: 768px) {
     display: none;
