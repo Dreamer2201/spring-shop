@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ChildPage() {
+export default function ProjectsPage() {
   return (
     <div>
         <h2>Child Catalog</h2>
