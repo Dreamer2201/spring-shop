@@ -4,17 +4,19 @@ import { useAuth } from '../hooks/useAuth';
 import { removeUser } from '../store/slises/userSlise';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import img1 from '../images-house/1.jpg'
-import img2 from '../images-house/2.jpg'
-import img3 from '../images-house/3.png'
-import img4 from '../images-house/4.jpg'
-import img5 from '../images-house/5.png'
+import img1 from '../images/images-house/7.jpg'
+import img2 from '../images/house7/2.jpg'
+import img3 from '../images/images-house/8.jpg'
+import img4 from '../images/images-house/9.jpg'
+import img5 from '../images/images-house/11.jpg'
 import { StyledBoxSlider, ThumbImg, StyledImg, BtnNext, BtnPrev } from './StylesBgSlider';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { MainContentHomePage, TitleHomePage } from './StyledHomePage';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import Advantages from '../components/advantages/Advantages';
+import News from '../components/news/News';
 
 export default function HomePage() {
   const dispatch = useDispatch();
@@ -24,7 +26,6 @@ export default function HomePage() {
 
   return (
     <MainContentHomePage>
-        <TitleHomePage>Home Page about shop</TitleHomePage>
         <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         navigation
@@ -61,6 +62,9 @@ export default function HomePage() {
       </SwiperSlide>
     </Swiper>
         {isAuth ? <button type='button' onClick={() => dispatch(removeUser())}>Log out</button> : <></>}
+      <Advantages />
+      <TitleHomePage>News</TitleHomePage>
+      <News />
     </MainContentHomePage>
   )
 }

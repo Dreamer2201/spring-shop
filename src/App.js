@@ -10,7 +10,9 @@ import './App.css';
 import LoginPage from './pages/loginPage/LoginPage';
 import RegisterPage from './pages/registerPage/RegisterPage';
 import Layout from './Layout/Layout';
-
+import SingleHousePage from './pages/singleHousePage/SingleHousePage';
+import News from './components/news/News';
+import NewsPage from './pages/newsPage/NewsPage';
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
         <Route path="/about" element={<AboutCompanyPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/houses' element={<HousesPage />} />
+        <Route path='/houses/:id' element={<SingleHousePage />} />
         <Route path='/duplexes' element={<DuplexesPage />} />
+        <Route path='/news' element={<NewsPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
         </Route>

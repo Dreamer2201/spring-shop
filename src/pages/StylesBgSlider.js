@@ -6,7 +6,7 @@ const StyledBoxSlider = styled.div`
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 350px;
+   
     outline: 1px solid black;
     overflow: hidden;
 `;
