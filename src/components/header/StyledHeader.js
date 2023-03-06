@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgBgHeader from '../../img-header/mountains.png'
+import imgBgHeader from '../../images/img-header/mountains.png'
 
 const StyledHeader = styled.header`
 position: relative;
