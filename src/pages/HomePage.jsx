@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { useAuth } from '../hooks/useAuth';
 import { removeUser } from '../store/slises/userSlise';
+import Header from '../components/header/Header';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import img1 from '../images/images-house/7.jpg'

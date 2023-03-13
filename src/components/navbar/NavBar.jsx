@@ -22,11 +22,12 @@ export default function NavBar() {
             <StyledNavLink to="/"> Home </StyledNavLink>
             <StyledNavLink to="/about"> About us </StyledNavLink>
             <ProjectsWrapper>
-            <StyledNavLink to="/projects" onClick={toggleSubMenu}  > Projects 
-            <IconSubMenuProjects />
-            </StyledNavLink>
-            {isSubMenuShow ? <Submenu onClose={toggleSubMenu} /> : <></>}
+                <StyledNavLink to="/projects" onClick={toggleSubMenu}  > Projects 
+                <IconSubMenuProjects />
+                </StyledNavLink>
+                {isSubMenuShow ? <Submenu onClose={toggleSubMenu} /> : <></>}
             </ProjectsWrapper>
+            <StyledNavLink to="/news"> News </StyledNavLink>
             <StyledNavLinkReg to="/register"> Sign up </StyledNavLinkReg>
             <StyledNavLinkLog to="/login"> Sign in </StyledNavLinkLog>
             {isModalOpen ? <BurgerMenu onClose={toggleModal} /> : <BtnBurgerMenu onClick={toggleModal} type='button'>=</BtnBurgerMenu>}

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const MainContentHomePage = styled.div`
-background-color: rgb(123, 114, 112);
+background-color: #fff;
     
 `
 const TitleHomePage = styled.h1`

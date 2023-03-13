@@ -13,6 +13,7 @@ import Layout from './Layout/Layout';
 import SingleHousePage from './pages/singleHousePage/SingleHousePage';
 import News from './components/news/News';
 import NewsPage from './pages/newsPage/NewsPage';
+import SingleNewPage from './pages/SingleNewPage.jsx/SingleNewPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/houses/:id' element={<SingleHousePage />} />
         <Route path='/duplexes' element={<DuplexesPage />} />
         <Route path='/news' element={<NewsPage />} />
+        <Route path='/news/:id' element={<SingleNewPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
         </Route>
